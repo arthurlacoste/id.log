@@ -19,6 +19,6 @@ And after that, you can use id.log instead of console.log :
 console.log('test'); // old way
 // -> Output : test
 
-console.log('test'); // id.log way
+id.log('test'); // id.log way
 // -> Output : HH941xxzXGynVjpNAAAA - test
 ```
