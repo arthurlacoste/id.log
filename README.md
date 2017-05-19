@@ -9,7 +9,7 @@ npm install id.log --save
 ## Usage
 
 ``` js
-var idLog = require('./id.log');
+var idLog = require('id.log');
 var id = new idLog(socket.id);
 ```
 

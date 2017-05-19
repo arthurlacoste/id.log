@@ -1,6 +1,6 @@
 {
   "name": "id.log",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Id.log is an alternative to console.log, with some cools features.",
   "main": "index.js",
   "repository": {
