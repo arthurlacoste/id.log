@@ -22,3 +22,6 @@ console.log('test'); // old way
 id.log('test'); // id.log way
 // -> Output : HH941xxzXGynVjpNAAAA - test
 ```
+
+## Licence
+[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) - Arthur Lacoste
