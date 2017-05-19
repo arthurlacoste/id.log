@@ -1,0 +1,20 @@
+{
+  "name": "id.log",
+  "version": "1.0.0",
+  "description": "Id.log is an alternative to console.log, with some cools features.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurlacoste/id.log.git"
+  },
+  "keywords": [
+    "console.log",
+    "util"
+  ],
+  "author": "Arthur Lacoste <arthak@gmail.com>",
+  "license": "CC",
+  "bugs": {
+    "url": "https://github.com/arthurlacoste/id.log/issues"
+  },
+  "homepage": "https://github.com/arthurlacoste/id.log#readme"
+}
