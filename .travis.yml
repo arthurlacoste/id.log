@@ -12,4 +12,4 @@ jobs:
         api_key:
         secure: "Ewttluu45ZFXypy8gjA1+73T19ct/fAhAhczKIvC9HjutuyxljoXjuNcMR/xamTFZDmruNOY/8IzPi7yGTGHbNckUA9SeSJ9WkuXSYVfYP2BXZpm/yGwIO+dwYUvhgSvQqu2XxTo3n42XcNY9t/lt5H3fhDKS0CCbAfzqtV7S6DNrO3KJjoo7P/WeoquPsNhXhcS9P4fR2zxgDrsDkJSnw9OS3hT0kJmQwjeoOIBZe9ZF4H03evevUGFFTmVt8zO8IBkknl7yDKn1Pg4Rlevj/MAxZMwWzUaZLION/ApQdQ2vTm5oeG5GC/u61lial9XpmNoshpXn/zeKEIp5nAGlLrVuyliVTOznPQnoJ3ubTo0r3bzBlcdcSmMg9H2SrGj5HkcPP2uxJuWmpafr+Aj38U3RvU0BA5SoQi+j7l+OdH/eykFt9yePo6nM8isMFMGGPb6JEne/GLJFus1oCFSbYGgLKvevaINGudIURHF70DqFBc9qDbovVfVIvOy9zNM6/j2AVR2l2ndiI834zFPqEir/f09/QgEmzl03N2WklxckyB36Aiu3aAjpQlp3TNCn94e5LveJNPG5xdwcgFLxGJkj6Uytd93uzOGZotI9Jy9famoPbOWJB6yEZPZC+FHd1QD/8Xvrl/z4LKELXYVAow+14HcjCy0lpQH9S82R+g="
         on: deploy-npm-release
-        email: arthak@gmail.com
+        email: "arthak@gmail.com"
