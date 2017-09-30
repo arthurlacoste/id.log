@@ -13,8 +13,18 @@ npm install id.log --save
 
 ``` js
 var idLog = require('id.log');
-var id = new idLog(socket.id);
+var id = new idLog('mySocketVar',true);
 ```
+
+or more faster :
+
+``` js
+var idLog = require('id.log');
+var id = new idLog();
+```
+ First parameter allow you to insert a var, like a socketid.
+ The second parameter is a simple date timer, usefull to know when your log have been displayed !
+ Third parameter, you can change your separator !!! Useless, but you can put a smiley. Isn't cool ?
 
 And after that, you can use id.log instead of console.log :
 
@@ -23,7 +33,7 @@ console.log('test'); // old way
 // -> Output : test
 
 id.log('test'); // id.log way
-// -> Output : HH941xxzXGynVjpNAAAA - test
+// -> Output : mySocketVar - 2017-09-30 13:50:05 - test
 ```
 
 ## Licence
