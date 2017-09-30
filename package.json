@@ -9,7 +9,10 @@
   },
   "keywords": [
     "console.log",
-    "util"
+    "util",
+    "log",
+    "logger",
+    "timestamp"
   ],
   "author": "Arthur Lacoste <arthak@gmail.com>",
   "license": "CC-BY-NC-SA-4.0",
