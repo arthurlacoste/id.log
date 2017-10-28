@@ -1,5 +1,5 @@
 # id.log
-id.log is a Node.JS module, alternative to console.log, with some cools parameters.
+id.log is a Node.JS module, alternative to console.log, with some powerful features !
 
 [![NPM Version][npm-version]][npm-url]
 [![travis][travis-badge]][travis-url]
@@ -58,7 +58,7 @@ You can change everything :
 * id: not used by default, but useful for socket instances
 * date: true, by default, but you can set it to false
 * separator: default to `'-'`, but you can use a beautiful unicorn emoji `'🦄'`
-* quietMode: false by default, you can handle it with `isDev()`, or set it with the main way. As **YOU** want ! 
+* quietMode: false by default, you can handle it with `isDev()`, or set it with the main way. As **YOU** want !
 * priority: set a minimum indicator for the quiet mode. By default, you set the priority on 5. This mean, if you send this log `id.log('message', 4)`, we don't display it.
 
 ## Licence
