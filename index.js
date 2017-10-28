@@ -32,7 +32,7 @@ const setPriority = function (priority) {
  * string: message you want to display
  * priority: priority of the current log, to compare with the main level
  */
-const log = function (string, priority = 10) {
+const log = function (string, priority) {
   priority = priority || 10;
 	if (priority >= opts.priority) {
 		if (opts.quietMode === false) {
