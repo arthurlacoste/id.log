@@ -3,6 +3,7 @@ id.log is a Node.JS module, alternative to console.log, with some powerful featu
 
 [![NPM Version][npm-version]][npm-url]
 [![travis][travis-badge]][travis-url]
+![CircleCI Build Status](https://circleci.com/gh/arthurlacoste/id.log.svg?style=shield)
 [![xo][xo-badge]][xo-url]
 
 ## Install
