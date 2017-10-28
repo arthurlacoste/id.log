@@ -1,50 +1,57 @@
 const util = require('util');
 
-module.exports = function(id='', dater=true, separator='-') {
-  // define quiet mode
-  this.quietMode = false;
+let opts = {
+	id: '',
+	date: true,
+	separator: '-',
+	quietMode: false,
+	priority: 5         // By default, all messages > 5 are displayed
+};
 
-  // by default, all messages > 5 are displayed
-  this.priority = 5;
+const init = function (options) {
+	opts = options;
+};
 
-  // set date var
-  this.getDate = '';
+// Set quiet mode
+const isDev = function (bool) {
+	if (bool === true) {
+		opts.quietMode = false;
+	} else {
+		opts.quietMode = true;
+	}
+};
 
-  // Log with all parameters
-  this.log = function(string,priority=10) {
-    if(priority=>this.priority) {
-      if(this.quietMode===false) {
+const setPriority = function (priority) {
+	opts.priority = priority;
+};
 
-        var returned = '';
+/*
+ * Log() Sending a beautiful and powerful console.log()-like 🔋
+ * string: message you want to display
+ * priority: priority of the current log, to compare with the main level
+ */
+const log = function (string, priority = 10) {
+	if (priority >= opts.priority) {
+		if (opts.quietMode === false) {
+			let r = '';
 
-        if(id!='') {
-          returned = util.format(id, separator);
-        }
+			if (opts.id !== '') {
+				r = util.format(opts.id, opts.separator);
+			}
 
-        if(dater===true) {
-          var getDate = new Date().toISOString().replace(/T/, ' ').substr(0, 19);
-          returned = util.format(returned, getDate, separator);
-        }
+			if (opts.date === true) {
+				const getDate = new Date().toISOString().replace(/T/, ' ').substr(0, 19);
+				r = util.format(r, getDate, opts.separator);
+			}
 
-        returned = util.format(returned, string);
+			r = util.format(r, string);
 
+			console.log(r);
+		}
+	}
+};
 
-        console.log(returned);
-      }
-    }
-  }
-
-  // set quiet mode
-  this.setQuietMode = function () {
-    this.quietMode = true;
-  }
-
-  this.setVerboseMode = function () {
-    this.quietMode = false;
-  }
-
-  this.setPriority = function(priority){
-    this.priority = priority;
-  }
-
-}
+module.exports = init;
+module.exports.log = log;
+module.exports.setPriority = setPriority;
+module.exports.isDev = isDev;

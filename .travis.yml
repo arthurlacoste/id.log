@@ -4,7 +4,8 @@ node_js:
   - "6"
 before_script:
 - npm install -g npm@'>=3'
-
+script:
+  - npm run test
 deploy:
   provider: npm
   api_key:
