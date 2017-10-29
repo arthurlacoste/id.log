@@ -14,7 +14,7 @@ npm install id.log --save
 
 ## Usage
 
-``` js
+```js
 const id = require('id.log');
 id.log('Hello dudes !');
 // =>  2017-10-28 10:48:37 - Hello dudes !
@@ -25,7 +25,7 @@ id.log('Hello dudes !');
 
 You can play with isDev, like [electron-is-dev](https://github.com/sindresorhus/electron-is-dev) :
 
-``` js
+```js
 id.isDev(false);
 id.log('No dev env');
 // No output in prod env
@@ -50,13 +50,13 @@ You can edit all the arguments by passing an object to `id()` :
 
 The better way to do it :
 
-``` js
+```js
 const args = {
 	id: 'goodid',
 	date: true,
 	separator: '🦄',
 	quietMode: false,
-	priority: 9  // By default, all messages > 5 are displayed
+	priority: 9  // all messages > 9 are displayed
 };
 
 id(args);
