@@ -1,6 +1,6 @@
 {
   "name": "id.log",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Id.log is an alternative to console.log, with some powerful features !",
   "main": "index.js",
   "repository": {
@@ -12,9 +12,11 @@
     "util",
     "log",
     "logger",
-    "timestamp"
+    "timestamp",
+    "is-dev"
   ],
   "scripts": {
+    "xo": "xo --fix && node test/unicorn",
     "test": "node test/unicorn.js"
   },
   "author": "Arthur Lacoste <arthak@gmail.com>",

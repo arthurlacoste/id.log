@@ -20,3 +20,8 @@ id(args);
 
 id.log('Dev env Hell YEAH');
 // Goodid 🦄 2017-10-28 10:48:37 🦄 Dev env Hell YEAH
+
+if (process.env.NODE_ENV === 'production') {
+	id.isDev(false);
+}
+id.log('What did you expect ?');

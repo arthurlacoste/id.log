@@ -33,7 +33,7 @@ const setPriority = function (priority) {
  * priority: priority of the current log, to compare with the main level
  */
 const log = function (string, priority) {
-  priority = priority || 10;
+	priority = priority || 10;
 	if (priority >= opts.priority) {
 		if (opts.quietMode === false) {
 			let r = '';

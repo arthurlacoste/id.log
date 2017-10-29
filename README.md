@@ -3,7 +3,7 @@ id.log is a Node.JS module, alternative to console.log, with some powerful featu
 
 [![NPM Version][npm-version]][npm-url]
 [![travis][travis-badge]][travis-url]
-![CircleCI Build Status](https://circleci.com/gh/arthurlacoste/id.log.svg?style=shield)
+![CircleCI Build Status][circle-badge]
 [![xo][xo-badge]][xo-url]
 
 ## Install
@@ -11,6 +11,7 @@ id.log is a Node.JS module, alternative to console.log, with some powerful featu
 ```
 npm install id.log --save
 ```
+
 ## Usage
 
 ``` js
@@ -19,7 +20,8 @@ id.log('Hello dudes !');
 // =>  2017-10-28 10:48:37 - Hello dudes !
 ```
 
-### isDev()
+
+### isDev() : set your current environment
 
 You can play with isDev, like [electron-is-dev](https://github.com/sindresorhus/electron-is-dev) :
 
@@ -31,6 +33,15 @@ id.log('No dev env');
 id.isDev(true);
 id.log('Dev env Hell YEAH');
 // =>  2017-10-28 10:48:37 - Dev env Hell YEAH
+```
+
+Or like this :
+
+```js
+if(process.env.NODE_ENV === 'production') {
+	id.isDev(false);
+}
+id.log('Dev env Hell YEAH');
 ```
 
 You can edit all the arguments by passing an object to `id()` :
@@ -70,5 +81,6 @@ You can change everything :
 [npm-url]: https://npmjs.org/package/id.log
 [travis-badge]: http://img.shields.io/travis/arthurlacoste/id.log.svg
 [travis-url]: https://travis-ci.org/arthurlacoste/id.log
+[circle-badge]: https://circleci.com/gh/arthurlacoste/id.log.svg?style=shield
 [xo-badge]: https://img.shields.io/badge/code_style-XO-5ed9c7.svg
 [xo-url]: https://github.com/sindresorhus/xo
